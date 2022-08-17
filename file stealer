@@ -1,1 +1,3 @@
-Copy-Item -path "C:\Users\$env:Username\Pictures\" -include "*.JPG", "*.PNG"  -Destination "C:\Windows\Temp" -Force -PassThru
+Get-ChildItem -Path "C:\default\" -Recurse |
+    Where-Object Name -like "*test*" | 
+    Copy-Item -Destination "C:\destination\"
